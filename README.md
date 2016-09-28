@@ -27,8 +27,9 @@ Keystroking 10 "e" using "keystroke"
 `./Keystroker.sh 10 "e" "5" "keystroke"`
 <br><br>
 Keystroking 10 "testtext" using "cp"
-<br><br>
+<br>
 `./Keystroker.sh 10 "testtext" "5" "cp"`
+<br><br>
 Keystroking 1 line of all numbers from 1 to 100 using "keystroke"
 <br>
 `./Keystroker.sh 1 "$(echo {1..100})" "5" "keystroke"`
