@@ -8,7 +8,7 @@ This script will simulate keystrokes.
 Usage is "path/to/script.sh" "numer of times to stroke(required)" "pre loop sleep(not required, leave blank for default(5))" "what to keystroke(not required, leave blank for default(e))" "mode (keystroke or cp, more on this later (not required, leave blank for default(keystroke))"
 <br><br>
 ###*What mode should I use?*
-This depends on what you want to keystroke. The default method, "keystroke", will simply stroke whatever you tell it to to letter by letter. This is very fast if you aer keystroning one letter, but will slow down if you increase the number of letters to use.
+This depends on what you want to keystroke. The default method, "keystroke", will simply stroke whatever you tell it to to, letter by letter. This is very fast if you aer keystroning one letter, but will slow down if you increase the number of letters to use.
 <br><br>
 The method "cp" on the other hand works very differently. Instead of parsing each letter one by one, it parses the whole word (or words, depening on what you used as $2). This is very slow for single letter strokes, but very fast if keystroking longer words. 
 <br><br>
