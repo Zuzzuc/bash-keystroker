@@ -14,7 +14,7 @@ The method "cp" on the other hand works very differently. Instead of parsing eac
 <br><br>
 ####Let's look at the stats. 
 
-"keystroke" will stroke about 83 letters per second, while "cp" will stroke about 10 blocks per second(where 1 block is your $3). **This means it is more effective to use "cp" if your intention is to keystroke a word with more than 8 characters.**
+"keystroke" will stroke about 30-80 letters per second, depending on $2 length. The longer it is the faster. "cp" on the other hand will stroke about 10 blocks per second(where 1 block is your $3). **This means it is more effective to use "cp" if your intention is to keystroke a word with more than 8 characters.**
 <br>
 # Examples
 <br><br>
