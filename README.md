@@ -1,6 +1,6 @@
 # Bash-keystroker
 <br>
-This script will simulate keystrokes to whatever is currently selected.
+This script will simulate keystrokes.
 <br>
 
 #Usage
@@ -29,3 +29,6 @@ Keystroking 10 "e" using "keystroke"
 Keystroking 10 "testtext" using "cp"
 <br>
 `./Keystroker.sh 10 "testtext" "5" "cp"`
+Keystroking 1 line of all numbers from 1 to 100 using "keystroke"
+<br>
+`./Keystroker.sh 1 "$(echo {1..100})" "5" "keystroke"`
