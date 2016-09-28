@@ -33,19 +33,19 @@ else
 	echo "Did not recognize mode, using default($defaultmode)"
 	mode=$defaultmode
 fi
+backupcopy=$(pbpaste)
 echo "Launching in $sleep second(s) with mode $mode"
 sleep $sleep
 echo "launching"
 if [ "$mode" == "keystroke" ];then
 	osascript -e 'repeat "'$1'" times' -e 'tell application "System Events"' -e "keystroke \"$keystroke\"" -e 'keystroke return' -e 'end tell' -e 'end repeat'
 elif [ "$mode" == "cp" ];then
-	backupcopy=$(pbpaste)
 	echo "$keystroke" | pbcopy
 	c=0
 	while [ "$c" -le "$1" ];do
-		osascript -e 'tell application "System Events" to keystroke "v" using {command down}'
+		osascript -e 'tell application "System Events"' -e 'keystroke "v" using {command down}' -e 'keystroke return' -e 'end tell'
 	let c=c+1;
 	done
-	echo "$backupcopy" | pbcopy
 fi
+echo "$backupcopy" | pbcopy
 echo "Done."
