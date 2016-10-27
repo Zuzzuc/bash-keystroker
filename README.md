@@ -5,7 +5,7 @@ This script will simulate keystrokes.
 
 #Usage
 <br>
-Usage is "path/to/script.sh" "numer of times to stroke(required)" "pre loop sleep(not required, leave blank for default(5))" "what to keystroke(not required, leave blank for default(e))" "mode (keystroke or cp, more on this later (not required, leave blank for default(keystroke))" 
+Usage is "path/to/script.sh" "numer of times to stroke(required)" "what to keystroke(not required, leave blank for default(e))" "pre loop sleep(not required, leave blank for default(5))" "mode (keystroke or cp, more on this later (not required, leave blank for default(keystroke))" 
 <br><br>
 ###*What mode should I use?*
 This depends on what you want to keystroke. The default method, "keystroke", will simply stroke whatever you tell it to do, letter by letter. This is very fast if you are keystroking one letter, but will slow down if you increase the number of letters to use. 
